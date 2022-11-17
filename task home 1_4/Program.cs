@@ -8,12 +8,10 @@ int number = Convert.ToInt32(Console.ReadLine());
 int counter = 1;
 int n = number;
 while (counter <= n)
+{
     if (counter % 2 == 0)
     {
         Console.Write($"{counter} ");
-        counter++;
     }
-    else
-    {
-        counter ++;
-    }
+    counter++;
+}
