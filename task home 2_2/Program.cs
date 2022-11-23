@@ -4,23 +4,57 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.WriteLine("Введите число:");
-int number = Convert.ToInt32(Console.ReadLine());
-string numberText = Convert.ToString(number);
-if (numberText.Length > 2)
-{
-    Console.WriteLine($"Третья цифра - {numberText[2]}");
-}
-else
-{
-    Console.WriteLine($"Третей цифры нет");
-}
-
-// int ThirdDigit(int num)
+// Console.WriteLine("Введите число:");
+// int number = Convert.ToInt32(Console.ReadLine());
+// string numberText = Convert.ToString(number);
+// if (numberText.Length > 2)
 // {
-//     while (number > ) num / 10;
-//     int thirdDigit = num % 10;
-//     return thirdDigit;
+//     Console.WriteLine($"Третья цифра - {numberText[2]}");
 // }
-// int thirdDigit = ThirdDigit(number);
-// Console.WriteLine($"третья цифра = {thirdDigit}");
+// else
+// {
+//     Console.WriteLine($"Третей цифры нет");
+// }
+
+// int num = 13;
+// int count = 0;
+// int[] arr = new int[num / 2];
+// while (count <= num)
+// {
+//     if (count % 2 == 0)
+//         // Console.Write($"{count}");
+//         arr[count] = count + 2;
+
+//     count++;
+// }
+
+Console.WriteLine("Введите цифру:");
+int evenNums = Convert.ToInt32(Console.ReadLine());
+
+int[] EvenNums(int num)
+{
+    int count = 0;
+    int[] arr = new int[num / 2];
+    while (count <= num)
+    {
+        if (count % 2 == 0)
+            // Console.Write($"{count}");
+            arr[count] = count + 2;
+
+        count++;
+    }
+    return arr;
+}
+Console.WriteLine($"{EvenNums}");
+
+// void EvenNums(int num)
+// {
+//     int count = 2;
+//     while (count <= num)
+//     {
+//         if (count % 2 == 0)
+//             Console.Write($"{count}");
+//     }
+
+//         count += 2;
+// }    
